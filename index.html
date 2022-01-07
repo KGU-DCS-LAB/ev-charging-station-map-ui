@@ -10,21 +10,37 @@
 </head>
 <body>
   <div class="text-center">
-    <div class="container-mobile">
+    <div class="container-mobile px-4 py-5 my-5">
       <div class="row">
-        <div class="col-sm-6">
-          <div class="card my-2"></div>
+        <div class="col-6 p-0">
+          <div class="card m-2 square">지도</div>
         </div>
-        <div class="col-sm-6">
-          <div class="card my-2"></div>
+        <div class="col-6 p-0">
+          <div class="card m-2 square">충전 알리기</div>
         </div>
       </div>
       <div class="row">
-        <div class="col-sm-6">
-          <div class="card my-2"></div>
+        <div class="col-12 p-0">
+          <div class="card card2 m-2">근처 충전소 찾기</div>
         </div>
-        <div class="col-sm-6">
-          <div class="card my-2"></div>
+      </div>
+      <div class="row">
+        <div class="col-6 p-0">
+          <div class="card m-2 square">선호하는 충전소 1</div>
+        </div>
+        <div class="col-6 p-0">
+          <div class="card m-2 square">선호하는 충전소 2</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4 p-0">
+          <div class="card m-2 square">인근 장소 추천 1</div>
+        </div>
+        <div class="col-4 p-0">
+          <div class="card m-2 square">인근 장소 추천 2</div>
+        </div>
+        <div class="col-4 p-0">
+          <div class="card m-2 square">인근 장소 추천 3</div>
         </div>
       </div>
     </div>  
@@ -44,12 +60,23 @@
       max-width:540px;
       margin-right: auto;
       margin-left: auto;
+      padding-left: 1px;
+      padding-right: 1px;
     }
 
     .card{
-      aspect-ratio: 1/1;
       border-radius: 1rem!important;
       border-color: #435ebe !important;
+    }
+
+    .square{
+      aspect-ratio: 1/1;
+    }
+
+    @media (min-width: 275px) {
+      .card2{
+        min-height: 100px;
+      }
     }
 </style>
 </html>
