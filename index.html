@@ -28,7 +28,9 @@
         <!-- 상단바 시작-->
         <div class="border-bottom d-flex justify-content-between pt-3 px-4">
           <div class="my-2">
-            <h2><i class="bi bi-list"></i></h2>
+            <button class="btn btn-default" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+              <h2><i class="bi bi-list"></i></h2>
+            </button>
           </div>
           <div class="my-2 py-2">
             <i class="bi bi-geo-fill"></i> 경기 수원시 영통구 광교산로 154-42
@@ -86,4 +88,14 @@
     </div>  
   </div>
 </body>
+<script>
+  var filter = "win16|win32|win64|mac|macintel"; 
+  if ( navigator.platform ) { 
+    if ( filter.indexOf( navigator.platform.toLowerCase() ) < 0 ) { //mobile 
+    alert('mobile 접속'); 
+    } else { //pc 
+    alert('pc 접속'); 
+    } 
+  }
+</script>
 </html>
