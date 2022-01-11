@@ -1,35 +1,36 @@
-body,html{
+body,
+html {
     height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
     background: gray;
-    }
+}
 
-    .container-mobile{
-      max-width:540px;
-      margin-right: auto;
-      margin-left: auto;
-      padding-left: 1px;
-      padding-right: 1px;
-      /* border:1px solid; */
-    }
+.container-mobile {
+    max-width: 540px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 1px;
+    padding-right: 1px;
+    /* border:1px solid; */
+}
 
-    #main-content{
-      background: #F2F7FF !important;
-    }
+#main-content {
+    background: #F2F7FF !important;
+}
 
-    .card{
-      border-radius: 1rem!important;
-      border-color: #435ebe !important;
-    }
+.card {
+    border-radius: 1rem!important;
+    border-color: #435ebe !important;
+}
 
-    .square{
-      aspect-ratio: 1/1;
-    }
+.square {
+    aspect-ratio: 1/1;
+}
 
-    @media (min-width: 275px) {
-      .card2{
+@media (min-width: 275px) {
+    .card2 {
         min-height: 100px;
-      }
     }
+}
