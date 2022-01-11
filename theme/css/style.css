@@ -8,6 +8,11 @@ html {
     background: gray;
 }
 
+#status-bar {
+    /* 상태바를 기본적으로 안보이게 함 (PC버전에서는 JS로 활성화) */
+    visibility: hidden;
+}
+
 .container-mobile {
     /* 컨테이너 크기를 모바일 버전처럼 만드는 역할 */
     max-width: 540px;
@@ -34,14 +39,19 @@ html {
     aspect-ratio: 1/1;
 }
 
-#status-bar {
-    /* 상태바를 기본적으로 안보이게 함 (PC버전에서는 JS로 활성화) */
-    visibility: hidden;
+.rect41 {
+    /* 크기를 항상 4:1 비율의 직사각형으로 유지해줌 */
+    aspect-ratio: 4/1;
+}
+
+.rect21 {
+    /* 크기를 항상 2:1 비율의 직사각형으로 유지해줌 */
+    aspect-ratio: 2/1;
 }
 
 @media (min-width: 275px) {
     .card-min-height {
-        /* 카드가 너무 작아지는 것을 방지함 */
+        /* 카드가 너무 작아지는 것을 방지함. 특수한 경우가 아닌 경우 rect 클래스를 사용할 것 */
         min-height: 100px;
     }
 }
